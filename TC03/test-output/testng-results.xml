@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="90868" started-at="2019-11-21T01:34:41Z" finished-at="2019-11-21T01:36:12Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="90868" started-at="2019-11-21T01:34:41Z" finished-at="2019-11-21T01:36:12Z">
+      <class name="org.com.tc.Snapdel">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:org.com.tc.Snapdel@2833cc44]" name="openBrowser" is-config="true" duration-ms="63688" started-at="2019-11-21T01:34:41Z" finished-at="2019-11-21T01:35:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="snapdeal()[pri:0, instance:org.com.tc.Snapdel@2833cc44]" name="snapdeal" duration-ms="25443" started-at="2019-11-21T01:35:44Z" finished-at="2019-11-21T01:36:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- snapdeal -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:org.com.tc.Snapdel@2833cc44]" name="closeBrowser" is-config="true" duration-ms="1522" started-at="2019-11-21T01:36:10Z" finished-at="2019-11-21T01:36:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- org.com.tc.Snapdel -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

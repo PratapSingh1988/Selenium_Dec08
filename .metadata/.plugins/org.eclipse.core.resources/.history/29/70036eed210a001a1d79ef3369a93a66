@@ -1,0 +1,49 @@
+package org.com.tc;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+public class Snapdel extends Tc01{
+
+	
+	//interface selbdriver
+	WebDriver driver;
+	
+	@BeforeMethod
+	public void openBrowser() {
+		String projectPath=System.getProperty("user.dir");
+		
+		String browserDriverEXE = projectPath + "\\Browsers\\chromedriver.exe";
+		System.setProperty("webdriver.chrome.driver", browserDriverEXE);
+		driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		
+		driver.get("http://www.snapdeal.com");
+		
+		
+	}
+	
+	@Test
+	
+	public void snapdeal() {
+		
+		WebElement snap= driver.findElement(By.xpath("(//a[@class='dp-widget-link hookLink'])[1]"));
+		
+		snap.click();
+	}
+	
+	
+	@AfterMethod
+	
+	public void closeBrowser() {
+		driver.quit();
+	}
+	
+	
+	
+}
